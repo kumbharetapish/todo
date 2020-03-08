@@ -1,0 +1,69 @@
+.listWrapper {
+  position: sticky;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  bottom: 110px;
+  border-radius: 30px;
+  left: 75%;
+  height: 300px;
+  width: 300px;
+  overflow-x: auto;
+  background-color: rgba(255, 255, 255, 0.507);
+  transition: ease-in 1s;
+  box-sizing: border-box;
+}
+.ActWrapper {
+    display: flex;
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+.list {
+  display: flex;
+  width: 200px;
+  border-radius: 50px;
+  padding: 5px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+.inputFiled {
+  width: 250px;
+  font-size: 20px;
+  border-style: none;
+  outline: none;
+  margin: 20px 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(51, 51, 51);
+  color: rgb(54, 37, 37);
+}
+.inputFiled::placeholder {
+  color: rgba(0, 0, 0, 0.664);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.delete {
+  width: 35px;
+  height: 35px;
+  border: none;
+  outline: none;
+  color: rgb(210, 42, 30);
+  font-size: 15px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.delete:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(210, 42, 30);
+}

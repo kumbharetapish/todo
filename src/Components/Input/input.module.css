@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.inputWrapper {
+  display: flex;
+  width: 600px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.inputFiled {
+  width: 100%;
+  font-size: 40px;
+  border-style: none;
+  outline: none;
+  padding: 10px 5px;
+  background-color: rgba(255, 255, 255, 0.24);
+  border-bottom: 2px solid rgb(255, 255, 255);
+  color: #fff;
+  text-align: center;
+}
+.inputFiled::placeholder {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  /* background-color: rgba(33, 73, 185, 0.514); */
+}
