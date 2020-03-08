@@ -39,16 +39,22 @@ class Container extends Component {
     ) {
       this.setState({ img: "morningImage", dayWish: "Good Morning" });
     } else if (
-      this.state.time.split(":")[0] >= 12 &&
+      this.state.time.split(":")[0] <= 12 &&
       this.state.time.split(":")[0] <= 16
     ) {
+      console.log("Noon");
+
       this.setState({ img: "noonImage", dayWish: "Good Afternoon" });
     } else if (
       this.state.time.split(":")[0] >= 17 &&
       this.state.time.split(":")[0] <= 20
     ) {
       this.setState({ img: "eveningImage", dayWish: "Good Evening" });
-    } else {
+    } else if (
+      this.state.time.split(":")[0] <= 21 &&
+      this.state.time.split(":")[0] <= 24
+    ) {
+      console.log("night");
       this.setState({ img: "nightImage", dayWish: "Good Night" });
     }
   }
